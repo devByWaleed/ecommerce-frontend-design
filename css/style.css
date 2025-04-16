@@ -14,6 +14,11 @@
 
 }
 
+/* Hide Page Scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 
 /* ================================
@@ -226,11 +231,10 @@
 .hero-banner {
     position: relative;
     width: 665px;
-    height: 300px;
+    height: 356px;
     overflow: hidden;
-    background-image: url("assets/other/banner-image.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url("../assets/other/banner-image.jpg");
+    background-size: cover;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -443,7 +447,7 @@
     padding: 20px 0 0 20px;
     /* height: 257px; */
     width: 370px;
-    background-image: url("assets/other/home-setting.jpg");
+    background-image: url("../assets/other/home-setting.jpg");
     background-size: cover;
     background-position: center;
     background-color: #FFE8BA;
@@ -510,7 +514,7 @@
     padding: 20px 0 0 20px;
     /* height: 257px; */
     width: 370px;
-    background-image: url("assets/other/electronic-items.jpg");
+    background-image: url("../assets/other/electronic-items.jpg");
     background-size: cover;
     background-position: center;
     background-color: #FFFFFF;
@@ -528,13 +532,14 @@
    Inquiry Section
 ================================= */
 .inquiry-section {
-    background-image: url('assets/other/boxes.jpg');
+    background-image: url('../assets/other/boxes.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
     border-radius: 8px;
     padding: 40px 20px;
     color: white;
+    background-color: rgba(44, 124, 241, 1);
 }
 
 /* Blue overlay */
@@ -542,7 +547,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(270deg, rgba(0, 209, 255, 1) 50%, rgba(44, 124, 241, 1) 100%);
+    background-color: rgba(44, 124, 241, 1);
     z-index: 0;
 }
 
@@ -903,6 +908,7 @@ textarea {
     border-radius: 50%;
     width: 32px;
     height: 32px;
+    line-height: 0;
     color: whitesmoke;
     background-color: #BDC4CD;
 }
