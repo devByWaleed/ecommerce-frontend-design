@@ -218,7 +218,11 @@
 .sidebar li {
     padding: 10px;
     border-radius: 6px;
-    /* background-color: #E5F1FF; */
+
+    &:hover {
+        background-color: #E5F1FF;
+
+    }
 }
 
 .sidebar a {
@@ -307,6 +311,11 @@
     border-radius: 6px;
     cursor: pointer;
     width: 180px;
+
+    &:hover {
+        color: rgba(0, 103, 255, 1);
+        background: white;
+    }
 }
 
 .user-greeting .login {
@@ -317,6 +326,11 @@
     width: 180px;
     color: rgba(0, 103, 255, 1);
     background-color: white;
+
+    &:hover {
+        color: white;
+        background-color: rgba(0, 103, 255, 1);
+    }
 }
 
 .offer {
@@ -532,24 +546,18 @@
    Inquiry Section
 ================================= */
 .inquiry-section {
-    background-image: url('../assets/other/boxes.jpg');
+    background-image:
+        linear-gradient(to right, rgba(4, 115, 234, 0.85), rgba(0, 255, 255, 0.726)), url('../assets/other/boxes.jpg');
     background-size: cover;
     background-position: center;
-    position: relative;
+    background-repeat: no-repeat;
     border-radius: 8px;
     padding: 40px 20px;
     color: white;
     background-color: rgba(44, 124, 241, 1);
 }
 
-/* Blue overlay */
-.inquiry-section::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(44, 124, 241, 1);
-    z-index: 0;
-}
+
 
 /* Content styles */
 .inquiry-content {

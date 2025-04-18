@@ -367,6 +367,11 @@
     width: 100%;
     margin-top: 10px;
     cursor: pointer;
+
+    &:hover {
+        color: #007bff;
+        background-color: white;
+    }
 }
 
 .profile-link {
@@ -381,6 +386,11 @@
     background-color: white;
     border: 1px solid #d7dce0;
     font-size: 14px;
+
+    &:hover {
+        color: white;
+        background-color: #007bff;
+    }
 }
 
 .later {

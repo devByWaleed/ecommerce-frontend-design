@@ -208,23 +208,33 @@ hr {
 }
 
 .remove-btn {
-    background: white;
+    background-color: white;
     border: 1px solid #e0e0e0;
     color: #ff4d4f;
     border-radius: 4px;
     padding: 4px 12px;
     cursor: pointer;
     font-size: 13px;
+
+    &:hover {
+        color: white;
+        background-color: #ff9e9f;
+    }
 }
 
 .save-btn {
-    background: white;
+    background-color: white;
     border: 1px solid #e0e0e0;
     color: #1A8CFF;
     border-radius: 4px;
     padding: 4px 12px;
     cursor: pointer;
     font-size: 13px;
+
+    &:hover {
+        color: white;
+        background-color: #82bdf7;
+    }
 }
 
 .cart-item-side {
@@ -264,6 +274,10 @@ hr {
     border: none;
     color: white;
     background-color: #1A8CFF;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .remove-all-btn {
@@ -277,6 +291,11 @@ hr {
     background-color: white;
     color: #007bff;
     border: 1px solid #e0e0e0;
+
+    &:hover {
+        color: white;
+        background-color: #007bff;
+    }
 }
 
 
@@ -333,6 +352,11 @@ hr {
     color: white;
     background-color: #00B517;
     border: none;
+
+    &:hover {
+        background-color: #02680f;
+
+    }
 }
 
 .coupon>img {
@@ -474,6 +498,11 @@ hr {
     color: white;
     font-weight: bold;
     cursor: pointer;
+
+    &:hover {
+        color: orange;
+        background-color: white;
+    }
 }
 
 .light-box {

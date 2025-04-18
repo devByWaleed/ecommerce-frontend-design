@@ -600,6 +600,10 @@
     background-color: #ebf0f3;
 }
 
+.bottom-controls.grid {
+    margin-right: 80px;
+}
+
 
 
 /* ================================
@@ -611,6 +615,7 @@
     justify-content: end;
     align-items: center;
     padding: 12px 16px;
+    margin-right: 0;
 }
 
 .select-wrapper {

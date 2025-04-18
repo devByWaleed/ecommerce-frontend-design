@@ -53,7 +53,7 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="#">Profile</a>
+          <a href="../index.html">Profile</a>
         </div>
         <div class="links">
           <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="#">Orders</a>
+          <a href="product-detail_page.html">Orders</a>
         </div>
         <div class="links">
           <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -677,23 +677,27 @@
     const listBtn = document.getElementById("listBtn");
     const gridBtn = document.getElementById("gridBtn");
     const container = document.querySelector(".product-container");
+    const pagination = document.querySelector(".bottom-controls");
 
     listBtn.addEventListener("click", () => {
       container.classList.remove("grid-view");
       listBtn.classList.add("active");
       gridBtn.classList.remove("active");
+      pagination.classList.remove("grid");
     });
 
     document.addEventListener("DOMContentLoaded", () => {
       container.classList.remove("grid-view");
       listBtn.classList.add("active");
       gridBtn.classList.remove("active");
+      pagination.classList.remove("grid");
     });
 
     gridBtn.addEventListener("click", () => {
       container.classList.add("grid-view");
       gridBtn.classList.add("active");
       listBtn.classList.remove("active");
+      pagination.classList.add("grid");
     });
   </script>
 </body>
