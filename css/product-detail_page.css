@@ -224,6 +224,16 @@
 
 
 
+.main-style {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0 65px 85px 112px;
+    background-color: #f7fafc;
+}
+
+
+
 /* ================================
    Products Pics Section
 ================================= */
@@ -730,5 +740,319 @@
 
     &>div>img {
         height: 17px;
+    }
+}
+
+
+
+/* ================================
+   Media Queries
+================================= */
+@media screen and (width <=768px) {
+
+    /* ==================
+       Header
+    ================== */
+    .header {
+        gap: 10px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .btn,
+    .category-select {
+        display: none;
+    }
+
+    /* ################# 
+        This one is temporary
+    ################ */
+    .user-greeting,
+    .sidebar {
+        display: none;
+    }
+
+    .orange,
+    .teal {
+        display: none;
+    }
+
+    .search-bar {
+        background-color: white;
+    }
+
+    .search-bar>svg {
+        display: block;
+        height: 16px;
+        top: 40px;
+        left: 14rem;
+        position: absolute;
+        color: #8B96A5;
+    }
+
+    .search-input {
+        position: absolute;
+        top: 70px;
+        left: 8px;
+        width: 95%;
+        margin: auto;
+        padding: 10px 0 10px 30px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        background: url('../assets/other/Vector.svg') no-repeat 10px center;
+        background-color: #f1f4f8;
+    }
+
+    .nav-links div:nth-child(2) {
+        display: none;
+    }
+
+    .links>a {
+        font-size: 10px;
+    }
+
+    .links>svg {
+        height: 19px;
+    }
+
+
+
+
+    /* ==================
+       Navbar
+    ================== */
+
+    #navbar {
+        margin-top: 10px;
+        padding: 20px;
+
+    }
+
+    #left-section {
+        overflow-x: scroll;
+        /* gap: 5px; */
+
+    }
+
+    #left-section>a {
+        font-size: 20px;
+        padding: 10px 20px;
+        color: #007bff;
+        background-color: #eff2f4;
+    }
+
+    #left-section>i {
+        position: absolute;
+        top: 27px;
+    }
+
+
+
+    /* ==================
+       Main Page Sections
+    ================== */
+    .main-style {
+        padding: 0;
+    }
+
+    .product-container {
+        flex-direction: column;
+        row-gap: 10px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .product-image,
+    .middle-container,
+    .big-pic {
+        width: 95%;
+        margin: auto;
+    }
+
+    .product-image>div {
+        overflow-x: scroll;
+    }
+
+    .liked-items,
+    .breadcrumb-container {
+        display: none;
+    }
+
+    .dark-blue-banner {
+        flex-direction: column;
+        row-gap: 5px;
+        width: 95%;
+        margin: auto;
+
+    }
+
+    .related-items {
+        width: 90%;
+        margin: auto;
+    }
+
+    .related-items .product-cont {
+        overflow-x: scroll;
+    }
+
+    .light-box {
+        height: 100%;
+        width: 60%;
+    }
+
+    .banner-btn {
+        scale: 1;
+    }
+
+
+
+    /* ==================
+        Footer
+    ================== */
+    .footer {
+        flex-direction: column;
+        row-gap: 5px;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .copyright {
+        width: 100%;
+        padding: 20px 15px;
+    }
+}
+
+
+
+/* Tablet */
+@media screen and (768px <=width <=1024px) {
+
+    /* ==================
+       Header Section
+    ================== */
+    .header {
+        padding: 25px 40px;
+        width: 100%;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .btn,
+    .category-select,
+    .user-greeting,
+    .sidebar .orange,
+    .teal {
+        display: none;
+    }
+
+    .search-bar {
+        background-color: white;
+        position: relative;
+    }
+
+    .search-bar>svg {
+        display: block;
+        height: 20px;
+        top: 15px;
+        left: 12rem;
+        position: absolute;
+        color: #8B96A5;
+    }
+
+    .search-input {
+        width: 95%;
+        padding: 10px 0 10px 30px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px;
+        background: url("../assets/other/Vector.svg") no-repeat 10px center;
+        background-color: #f1f4f8;
+    }
+
+
+    .links>a {
+        font-size: 12px;
+    }
+
+    .links>svg {
+        height: 22px;
+    }
+
+
+
+    /* ==================
+       Navbar Section
+    ================== */
+    #navbar {
+        margin-top: 15px;
+        padding: 25px 40px;
+    }
+
+    #left-section {
+        overflow-x: auto;
+    }
+
+    #left-section>a {
+        font-size: 18px;
+        padding: 12px 18px;
+        color: #007bff;
+        background-color: #eff2f4;
+    }
+
+
+
+    /* ==================
+       Main Page Sections
+    ================== */
+    .main-style {
+        padding: 5px;
+    }
+
+    .product-container {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .product-details-container,
+    .related-items,
+    .dark-blue-banner {
+        width: 100%;
+    }
+
+    .product-image,
+    .middle-container,
+    .big-pic {
+        width: 95%;
+        margin: auto;
+    }
+
+    .supplier-card>.supplier-header {
+        flex-direction: column;
+    }
+
+    .product-image>div {
+        overflow-x: scroll;
+    }
+
+    .liked-items,
+    .breadcrumb-container {
+        display: none;
+    }
+
+
+
+    /* ==================
+       Footer Section
+    ================== */
+    .footer {
+        flex-wrap: wrap;
+        padding: 20px 40px;
+        gap: 20px;
     }
 }
