@@ -637,7 +637,7 @@
     left: 0;
     top: 0;
     width: 745px;
-    height: 117px;
+    height: 114px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 100% 100%, 0 100%);
@@ -669,7 +669,7 @@
 
     }
 
-    &>img {
+    &>a>img {
         height: 42px;
         border-radius: 4px;
     }
@@ -765,19 +765,6 @@
 
     .btn,
     .category-select {
-        display: none;
-    }
-
-    /* ################# 
-        This one is temporary
-    ################ */
-    .user-greeting,
-    .sidebar {
-        display: none;
-    }
-
-    .orange,
-    .teal {
         display: none;
     }
 
@@ -882,14 +869,7 @@
         display: none;
     }
 
-    .dark-blue-banner {
-        flex-direction: column;
-        row-gap: 5px;
-        width: 95%;
-        margin: auto;
-
-    }
-
+    
     .related-items {
         width: 90%;
         margin: auto;
@@ -898,7 +878,14 @@
     .related-items .product-cont {
         overflow-x: scroll;
     }
-
+    
+    .dark-blue-banner {
+        flex-direction: column;
+        row-gap: 5px;
+        width: 95%;
+        margin: auto;
+    }
+    
     .light-box {
         height: 100%;
         width: 60%;

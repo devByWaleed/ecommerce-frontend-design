@@ -130,6 +130,16 @@ hr {
 
 
 
+.main-style {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 10px 65px 10px 112px;
+    background-color: #f7fafc;
+}
+
+
+
 /* ================================
    My Cart Section
 ================================= */
@@ -214,7 +224,6 @@ hr {
     border-radius: 4px;
     padding: 4px 12px;
     cursor: pointer;
-    font-size: 13px;
 
     &:hover {
         color: white;
@@ -229,7 +238,6 @@ hr {
     border-radius: 4px;
     padding: 4px 12px;
     cursor: pointer;
-    font-size: 13px;
 
     &:hover {
         color: white;
@@ -510,7 +518,7 @@ hr {
     left: 0;
     top: 0;
     width: 745px;
-    height: 117px;
+    height: 114px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 100% 100%, 0 100%);
@@ -542,7 +550,7 @@ hr {
 
     }
 
-    &>img {
+    &>a>img {
         height: 42px;
         border-radius: 4px;
     }
@@ -624,7 +632,7 @@ hr {
 @media screen and (width <=768px) {
 
     .main-page {
-        overflow: hidden;
+        overflow: scroll;
     }
 
 
@@ -643,19 +651,6 @@ hr {
 
     .btn,
     .category-select {
-        display: none;
-    }
-
-    /* ################# 
-        This one is temporary
-    ################ */
-    .user-greeting,
-    .sidebar {
-        display: none;
-    }
-
-    .orange,
-    .teal {
         display: none;
     }
 
@@ -730,19 +725,95 @@ hr {
 
 
     /* ==================
-       Newsletter Section
+       Main Style Sections
     ================== */
-    .newsletter-form {
+    .main-style {
+        margin: 15px 0;
+        padding: 5px;
+    }
+
+    .my-cart-area {
         flex-direction: column;
+    }
+
+    .cart-container,
+    .cart-item {
+        width: 100%;
+    }
+
+    .save-btn, .remove-btn {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .coupon:first-of-type {
+        display: none;
+    }
+
+    .dark-blue-banner {
+        flex-direction: column;
+        row-gap: 5px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .light-box {
+        height: 100%;
+        width: 60%;
+    }
+
+    .banner-btn {
+        scale: 1;
+    }
+
+    .support {
+        display: none;
+    }
+
+    .related-items {
+        border: none;
+        background-color: #f7fafc;
+
+    }
+
+    .product-cont {
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: #f7fafc;
+    }
+
+    .item-cont {
+        flex-direction: row;
+        column-gap: 30px;
         align-items: center;
-        justify-content: center;
+        border: 1px solid #e0e0e0;
+        background-color: white;
+    }
+
+    .item-cont>img {
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        background-color: white;
+    }
+
+    .item-price {
+        order: 2;
+    }
+
+    .item-desc {
+        order: 1;
+    }
+
+    .product-info>button {
+        width: 63%;
+        order: 3;
     }
 
 
     /* ==================
         Footer
     ================== */
-
     .footer {
         flex-direction: column;
         align-items: center;
@@ -762,7 +833,7 @@ hr {
 @media screen and (768px <=width <=1024px) {
 
     .main-page {
-        overflow: hidden;
+        overflow: scroll;
     }
 
     /* Header */
@@ -839,6 +910,92 @@ hr {
         background-color: #eff2f4;
     }
 
+
+
+    /* ==================
+       Main Style Sections
+    ================== */
+    .main-style {
+        margin: 15px 0;
+        padding: 5px;
+    }
+
+    
+
+    .cart-container,
+    .cart-item {
+        width: 100%;
+    }
+
+    .coupon:first-of-type {
+        display: none;
+    }
+
+    .dark-blue-banner {
+        flex-direction: column;
+        row-gap: 5px;
+        width: 95%;
+        margin: auto;
+    }
+
+    .light-box {
+        height: 100%;
+        width: 60%;
+    }
+
+    .banner-btn {
+        scale: 1;
+    }
+
+    .support {
+        display: none;
+    }
+
+    .related-items {
+        border: none;
+        background-color: #f7fafc;
+
+    }
+
+    .product-cont {
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: #f7fafc;
+    }
+
+    .item-cont {
+        flex-direction: row;
+        column-gap: 30px;
+        align-items: center;
+        border: 1px solid #e0e0e0;
+        background-color: white;
+    }
+
+    .item-cont>img {
+        height: 60px;
+        width: 60px;
+        padding: 0;
+        background-color: white;
+    }
+
+    .item-price {
+        order: 2;
+    }
+
+    .item-desc {
+        order: 1;
+    }
+
+    .product-info>button {
+        width: 63%;
+        order: 3;
+    }
+
+
+
+    /* ==================
+        Footer
+    ================== */
     .footer {
         flex-wrap: wrap;
         padding: 20px 40px;

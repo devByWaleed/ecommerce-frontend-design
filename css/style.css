@@ -882,7 +882,7 @@ textarea {
 
     }
 
-    &>img {
+    &>a>img {
         height: 42px;
         border-radius: 4px;
     }
@@ -1457,11 +1457,6 @@ textarea {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 30px;
-    }
-
-    .footer-list>img {
-        height: 30px;
-        width: auto;
     }
 
     .copyright {
