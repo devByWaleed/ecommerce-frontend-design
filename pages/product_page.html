@@ -15,6 +15,7 @@
 <body>
   <main class="main-page">
     <header class="header">
+      <i id="menu-icon" class="bi bi-list"></i>
       <div class="logo">
         <svg width="44" height="48" viewBox="0 0 44 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.8">
@@ -37,7 +38,7 @@
         <p>Brand</p>
       </div>
       <form class="search-bar">
-        <input type="text" placeholder="Search" class="search-input" />
+        <input type="text" placeholder="Search" class="search-input">
         <select class="category-select">
           <option>All category</option>
           <option>Electronics</option>
@@ -53,7 +54,8 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="../index.html">Profile</a>
+
+          <a href="index.html">Profile</a>
         </div>
         <div class="links">
           <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +73,7 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="product-detail_page.html">Orders</a>
+          <a href="pages/product-detail_page.html">Orders</a>
         </div>
         <div class="links">
           <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,14 +82,43 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="my-cart_page.html">My Cart</a>
+          <a href="pages/my-cart_page.html">My Cart</a>
         </div>
       </div>
     </header>
 
     <nav id="navbar">
       <div id="left-section">
-        <i class="bi bi-list" onclick="myFunction()"></i>
+        <i class="bi bi-x-square" id="close-icon"></i>
+        <div class="profile">
+          <div class="avatar">
+            <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.15106 24.8012L3.34548 27.9234C3.0048 28.1065 0.311738 29.1996 0.0268555 29.445C5.41408 33.5016 10.1687 34.4054 14.9427 34.4054C19.6814 34.4054 24.8948 31.8254 28.2701 29.05C27.9588 28.7908 26.7484 28.1485 26.374 27.9647L20.1572 24.9004C19.354 24.5044 18.8466 23.6951 18.8466 22.8097V20.4049C19.0213 20.2088 19.2211 19.9568 19.4347 19.6593C20.282 18.4794 20.923 17.1814 21.3672 15.8197C22.1646 15.5772 22.752 14.8512 22.752 13.9883V11.4213C22.752 10.8567 22.4972 10.3521 22.1015 9.99884V6.28812C22.1015 6.28812 22.8746 0.51355 14.9427 0.51355C7.01077 0.51355 7.78392 6.28812 7.78392 6.28812V9.99884C7.38743 10.3521 7.13339 10.8567 7.13339 11.4213V13.9883C7.13339 14.6644 7.4939 15.2594 8.03356 15.6033C8.68409 18.3954 10.3875 20.4049 10.3875 20.4049V22.7504C10.3868 23.6046 9.91246 24.3915 9.15106 24.8012Z"
+                fill="white" />
+            </svg>
+          </div>
+          <a href="">Sign In</a>
+          <span> | </span>
+          <a href="">Register</a>
+        </div>
+        <div class="mobile-links">
+          <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+          <a href="pages/product_page.html"><i class="bi bi-list-ul"></i> Categories</a>
+          <a href=""><i class="bi bi-heart"></i> Favourites</a>
+          <a href="pages/my-cart_page.html"><i class="bi bi-bag-fill"></i> My Orders</a>
+
+          <hr>
+
+          <p><i class="bi bi-globe"></i> English | USD</p>
+          <a href=""><i class="bi bi-headset"></i> Contact Us</a>
+          <a href=""><i class="bi bi-building"></i> About</a>
+
+          <hr>
+          <a href="">User Agreement</a>
+          <a href="">Patnership</a>
+          <a href="">Privacy Policy</a>
+        </div>
         <a href="#">All category</a>
         <a href="#">Hot offers</a>
         <a href="#">Gift boxes</a>
@@ -101,9 +132,10 @@
           <option value="">English, USD</option>
         </select>
         <select class="category-select">
-          <option value="">Ship to</option>
-          <span><img src="../assets/other/german_flag.jpg" alt="German Flag" class="flag-icon" /></span>
+          <option value="">Ship to </option><span><img src="assets/other/german_flag.jpg" alt="German Flag"
+              class="flag-icon" /></span>
         </select>
+
       </div>
     </nav>
 
@@ -642,59 +674,7 @@
 
   </main>
 
-  <script>
-    // Function For Toggling The Arrow
-    function toggleSection(header) {
-      const upArrow = `
-        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 0.294983L0 6.29498L1.41 7.70498L6 3.12498L10.59 7.70498L12 6.29498L6 0.294983Z" fill="#8B96A5"/>
-        </svg>
-    `;
-
-      const downArrow = `
-        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 7.70502L12 1.70502L10.59 0.295013L6 4.87502L1.41 0.295013L0 1.70502L6 7.70502Z" fill="#8B96A5"/>
-        </svg>
-    `;
-
-      const content = header.nextElementSibling;
-      const arrowIcon = header.querySelector("svg");
-
-      // Toggle content visibility
-      content.classList.toggle("hidden");
-
-      // Swap arrow icon
-      arrowIcon.innerHTML = content.classList.contains("hidden")
-        ? downArrow
-        : upArrow;
-    }
-
-    const listBtn = document.getElementById("listBtn");
-    const gridBtn = document.getElementById("gridBtn");
-    const container = document.querySelector(".product-container");
-    const pagination = document.querySelector(".bottom-controls");
-
-    listBtn.addEventListener("click", () => {
-      container.classList.remove("grid-view");
-      listBtn.classList.add("active");
-      gridBtn.classList.remove("active");
-      pagination.classList.remove("grid");
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-      container.classList.remove("grid-view");
-      listBtn.classList.add("active");
-      gridBtn.classList.remove("active");
-      pagination.classList.remove("grid");
-    });
-
-    gridBtn.addEventListener("click", () => {
-      container.classList.add("grid-view");
-      gridBtn.classList.add("active");
-      listBtn.classList.remove("active");
-      pagination.classList.add("grid");
-    });
-  </script>
+  <script src="../script.js"></script>
 </body>
 
 </html>
