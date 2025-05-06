@@ -160,7 +160,8 @@
     text-decoration: underline;
 }
 
-#left-section>i, .profile {
+#left-section>i,
+.profile {
     display: none;
 }
 
@@ -1003,9 +1004,6 @@ textarea {
         display: none;
     }
 
-    /* ################# 
-        This one is temporary
-    ################ */
     .user-greeting,
     .sidebar {
         display: none;
@@ -1042,7 +1040,8 @@ textarea {
         background-color: #f1f4f8;
     }
 
-    .nav-links div:nth-child(2), .nav-links div:nth-child(3) {
+    .nav-links div:nth-child(2),
+    .nav-links div:nth-child(3) {
         display: none;
     }
 
@@ -1072,16 +1071,20 @@ textarea {
         /* padding: 10px 10px 10px 20px; */
         position: fixed;
         top: 0;
-        left: -100%; /* hidden by default */
-        width: 80%; /* adjust for mobile */
-        height: 100vh; /* full mobile height */
+        left: -100%;
+        /* hidden by default */
+        width: 80%;
+        /* adjust for mobile */
+        height: 100vh;
+        /* full mobile height */
         transition: left 0.3s ease;
         z-index: 1000;
         background-color: #eff2f4;
     }
-    
+
     #left-section.active {
         left: 0;
+        background-color: white;
         box-shadow: 10px 0 20px 80px rgb(109, 109, 109);
     }
 
@@ -1091,13 +1094,13 @@ textarea {
         padding: 20px 0 20px 15px;
         background-color: #dadcdd;
     }
-    
+
     .profile>a {
         margin-top: 10px;
         text-decoration: none;
         color: #1C1C1C;
     }
-    
+
     #left-section.active .mobile-links {
         display: flex;
         flex-direction: column;
@@ -1106,7 +1109,8 @@ textarea {
         font-size: 20px;
     }
 
-    .mobile-links>a, p {
+    .mobile-links>a,
+    p {
         display: flex;
         align-items: center;
         gap: 20px;
@@ -1119,7 +1123,7 @@ textarea {
     }
 
     .mobile-links>hr {
-        width: 185%;
+        width: 165%;
         margin: auto;
     }
 

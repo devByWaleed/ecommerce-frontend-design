@@ -15,6 +15,7 @@
 <body>
     <main class="main-page">
         <header class="header">
+            <i id="menu-icon" class="bi bi-list"></i>
             <div class="logo">
                 <svg width="44" height="48" viewBox="0 0 44 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.8">
@@ -37,7 +38,7 @@
                 <p>Brand</p>
             </div>
             <form class="search-bar">
-                <input type="text" placeholder="Search" class="search-input" />
+                <input type="text" placeholder="Search" class="search-input">
                 <select class="category-select">
                     <option>All category</option>
                     <option>Electronics</option>
@@ -52,6 +53,7 @@
                             d="M10 10.628C12.7625 10.628 15 8.28639 15 5.3954C15 2.50441 12.7625 0.162842 10 0.162842C7.2375 0.162842 5 2.50441 5 5.3954C5 8.28639 7.2375 10.628 10 10.628ZM10 12.1977C6.6625 12.1977 0 13.9506 0 17.4303V18.7384C0 19.4579 0.5625 20.0466 1.25 20.0466H18.75C19.4375 20.0466 20 19.4579 20 18.7384V17.4303C20 13.9506 13.3375 12.1977 10 12.1977Z"
                             fill="#8B96A5" />
                     </svg>
+
 
                     <a href="../index.html">Profile</a>
                 </div>
@@ -87,7 +89,36 @@
 
         <nav id="navbar">
             <div id="left-section">
-                <i class="bi bi-list" onclick="myFunction()"></i>
+                <i class="bi bi-x-square" id="close-icon"></i>
+                <div class="profile">
+                    <div class="avatar">
+                        <svg width="29" height="35" viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.15106 24.8012L3.34548 27.9234C3.0048 28.1065 0.311738 29.1996 0.0268555 29.445C5.41408 33.5016 10.1687 34.4054 14.9427 34.4054C19.6814 34.4054 24.8948 31.8254 28.2701 29.05C27.9588 28.7908 26.7484 28.1485 26.374 27.9647L20.1572 24.9004C19.354 24.5044 18.8466 23.6951 18.8466 22.8097V20.4049C19.0213 20.2088 19.2211 19.9568 19.4347 19.6593C20.282 18.4794 20.923 17.1814 21.3672 15.8197C22.1646 15.5772 22.752 14.8512 22.752 13.9883V11.4213C22.752 10.8567 22.4972 10.3521 22.1015 9.99884V6.28812C22.1015 6.28812 22.8746 0.51355 14.9427 0.51355C7.01077 0.51355 7.78392 6.28812 7.78392 6.28812V9.99884C7.38743 10.3521 7.13339 10.8567 7.13339 11.4213V13.9883C7.13339 14.6644 7.4939 15.2594 8.03356 15.6033C8.68409 18.3954 10.3875 20.4049 10.3875 20.4049V22.7504C10.3868 23.6046 9.91246 24.3915 9.15106 24.8012Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <a href="">Sign In</a>
+                    <span> | </span>
+                    <a href="">Register</a>
+                </div>
+                <div class="mobile-links">
+                    <a href="../index.html"><i class="bi bi-house-door"></i> Home</a>
+                    <a href="product_page.html"><i class="bi bi-list-ul"></i> Categories</a>
+                    <a href="product-detail_page.html"><i class="bi bi-heart"></i> Favourites</a>
+                    <a href="my-cart_page.html"><i class="bi bi-bag-fill"></i> My Orders</a>
+
+                    <hr>
+
+                    <p><i class="bi bi-globe"></i> English | USD</p>
+                    <a href=""><i class="bi bi-headset"></i> Contact Us</a>
+                    <a href=""><i class="bi bi-building"></i> About</a>
+
+                    <hr>
+                    <a href="">User Agreement</a>
+                    <a href="">Patnership</a>
+                    <a href="">Privacy Policy</a>
+                </div>
                 <a href="#">All category</a>
                 <a href="#">Hot offers</a>
                 <a href="#">Gift boxes</a>
@@ -101,9 +132,10 @@
                     <option value="">English, USD</option>
                 </select>
                 <select class="category-select">
-                    <option value="">Ship to</option>
-                    <span><img src="assets/other/german_flag.jpg" alt="German Flag" class="flag-icon" /></span>
+                    <option value="">Ship to </option><span><img src="assets/other/german_flag.jpg" alt="German Flag"
+                            class="flag-icon" /></span>
                 </select>
+
             </div>
         </nav>
 
@@ -486,7 +518,7 @@
             <div class="footer-list">
                 <h2>Get Apps</h2>
                 <a href="#"><img src="../assets/other/app-btn.jpg" alt="App Store Icon" /></a>
-                <a href="#"><img src="../assets/other/play-btn.jpg" alt="App Store Icon" /></a> 
+                <a href="#"><img src="../assets/other/play-btn.jpg" alt="App Store Icon" /></a>
             </div>
         </footer>
         <!-- footer End -->

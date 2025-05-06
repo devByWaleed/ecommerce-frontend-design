@@ -15,22 +15,25 @@ A fully responsive **E-Commerce frontend design** design built using **HTML, CSS
   - Filter and sort functionality designs.
 
 - **Product Detail Page**
-  - High-quality product preview
-  - Description, price, and variant options
-  - Add to cart functionality (UI only)
+  - High-quality product preview.
+  - Description, price, and variant options.
+  - Add to cart functionality (UI only).
 
 - **My Cart Page**
-  - View items added to cart
-  - Quantity update interface
-  - Subtotal and total price display
+  - View items added to cart.
+  - Quantity update interface.
+  - Subtotal and total price display.
+
+- **Sidebar**
+  - A sidebar for toggling b/w pages on mobile view only.
 
 
 ## 🧰 Technologies Used
 
-- HTML5  
-- CSS3  
-- Vanilla JavaScript  
-- Responsive design using Flexbox  
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Responsive design using Flexbox
 - Figma (for UI reference)
 
 

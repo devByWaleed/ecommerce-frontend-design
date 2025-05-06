@@ -55,7 +55,7 @@
           </svg>
 
 
-          <a href="index.html">Profile</a>
+          <a href="../index.html">Profile</a>
         </div>
         <div class="links">
           <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="pages/product-detail_page.html">Orders</a>
+          <a href="product-detail_page.html">Orders</a>
         </div>
         <div class="links">
           <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@
               fill="#8B96A5" />
           </svg>
 
-          <a href="pages/my-cart_page.html">My Cart</a>
+          <a href="my-cart_page.html">My Cart</a>
         </div>
       </div>
     </header>
@@ -103,10 +103,10 @@
           <a href="">Register</a>
         </div>
         <div class="mobile-links">
-          <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
-          <a href="pages/product_page.html"><i class="bi bi-list-ul"></i> Categories</a>
-          <a href=""><i class="bi bi-heart"></i> Favourites</a>
-          <a href="pages/my-cart_page.html"><i class="bi bi-bag-fill"></i> My Orders</a>
+          <a href="../index.html"><i class="bi bi-house-door"></i> Home</a>
+          <a href="product_page.html"><i class="bi bi-list-ul"></i> Categories</a>
+          <a href="product-detail_page.html"><i class="bi bi-heart"></i> Favourites</a>
+          <a href="my-cart_page.html"><i class="bi bi-bag-fill"></i> My Orders</a>
 
           <hr>
 
@@ -674,7 +674,80 @@
 
   </main>
 
-  <script src="../script.js"></script>
+  <script>
+    // Graping Icons
+    const menuIcon = document.getElementById("menu-icon");
+    const closeIcon = document.getElementById("close-icon");
+    const sidebar = document.getElementById("left-section");
+
+    // Add classList To Open Sidebar
+    menuIcon.addEventListener("click", () => {
+      sidebar.classList.add("active");
+    });
+
+    // Remove classList To Close Sidebar
+    closeIcon.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+
+    });
+
+
+    // Function For Toggling The Arrow
+    function toggleSection(header) {
+      const upArrow = `
+      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 0.294983L0 6.29498L1.41 7.70498L6 3.12498L10.59 7.70498L12 6.29498L6 0.294983Z" fill="#8B96A5"/>
+      </svg>
+  `;
+
+      const downArrow = `
+      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 7.70502L12 1.70502L10.59 0.295013L6 4.87502L1.41 0.295013L0 1.70502L6 7.70502Z" fill="#8B96A5"/>
+      </svg>
+  `;
+
+      const content = header.nextElementSibling;
+      const arrowIcon = header.querySelector("svg");
+
+      // Toggle content visibility
+      content.classList.toggle("hidden");
+
+      // Swap arrow icon
+      arrowIcon.innerHTML = content.classList.contains("hidden")
+        ? downArrow
+        : upArrow;
+    }
+
+
+    // Grapping Elements Of Product Page
+    const listBtn = document.getElementById("listBtn");
+    const gridBtn = document.getElementById("gridBtn");
+    const container = document.querySelector(".product-container");
+    const pagination = document.querySelector(".bottom-controls");
+
+
+    listBtn.addEventListener("click", () => {
+      container.classList.remove("grid-view");
+      listBtn.classList.add("active");
+      gridBtn.classList.remove("active");
+      pagination.classList.remove("grid");
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      container.classList.remove("grid-view");
+      listBtn.classList.add("active");
+      gridBtn.classList.remove("active");
+      pagination.classList.remove("grid");
+    });
+
+    // Event To Change Layout To Grid
+    gridBtn.addEventListener("click", () => {
+      container.classList.add("grid-view");
+      gridBtn.classList.add("active");
+      listBtn.classList.remove("active");
+      pagination.classList.add("grid");
+    });
+  </script>
 </body>
 
 </html>

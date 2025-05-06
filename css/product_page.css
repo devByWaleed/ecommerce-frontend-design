@@ -51,6 +51,10 @@
     background-color: #FFFFFF;
 }
 
+.header>i {
+    display: none;
+}
+
 
 /* Logo */
 .logo {
@@ -155,10 +159,15 @@
     text-decoration: underline;
 }
 
-.bi-list {
-    font-size: 24px;
-    cursor: pointer;
+#left-section>i,
+.profile {
+    display: none;
 }
+
+.mobile-links {
+    display: none;
+}
+
 
 /* Right section */
 #right-section {
@@ -856,19 +865,6 @@
         display: none;
     }
 
-    /* ################# 
-        This one is temporary
-    ################ */
-    .user-greeting,
-    .sidebar {
-        display: none;
-    }
-
-    .orange,
-    .teal {
-        display: none;
-    }
-
     .search-bar {
         background-color: white;
     }
@@ -939,6 +935,7 @@
 
     #left-section.active {
         left: 0;
+        background-color: white;
         box-shadow: 10px 0 20px 80px rgb(109, 109, 109);
     }
 
@@ -977,7 +974,7 @@
     }
 
     .mobile-links>hr {
-        width: 185%;
+        width: 165%;
         margin: auto;
     }
 
@@ -997,6 +994,11 @@
     /* ==================
        Product page main section
     ================== */
+
+    .breadcrumb-container {
+        display: none;
+    }
+
     .top-bar {
         column-gap: 5px;
         width: 95%;
