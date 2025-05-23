@@ -50,4 +50,4 @@ This project is focused on **frontend design only** — no backend or database f
 ## 🌐 Visit
 
 - Access the website through link:     
-https://waleed1857.github.io/ecommerce-frontend-design/
+https://devByWaleed.github.io/ecommerce-frontend-design/
